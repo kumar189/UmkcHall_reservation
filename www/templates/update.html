@@ -1,0 +1,29 @@
+<ion-header-bar>
+
+</ion-header-bar>
+<ion-content class="pane">
+
+  <style type="text/css">
+    .pane{
+      background: url(../img/bb.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+    }
+  </style>
+
+  <div align="center" class="update">
+    <br>
+    <br>
+
+
+    <input type="email" id="email" class="form-control" placeholder="Enter new Email"
+           required autofocus ng-model="email">
+
+    <input type="password" id="password" class="form-control" placeholder="Enter new Password"
+           required autofocus ng-model="password">
+
+    <button class="button button-block button-positive padding-horizontal" ng-click="update(email,password)">Update Profile</button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head class="pane">
+  <!-- CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+
+  <style type="text/css">
+    .pane{
+      background: url(../img/kc.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+    }
+  </style>
+
+
+</head>
+<body>
+<div class="register">
+
+  <!-- PAGE HEADER -->
+  <div class="page-header"><h1>Login</h1></div>
+
+
+  <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+
+
+    <!-- EMAIL -->
+    <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+      <label>Email*</label>
+      <input type="email" name="email" class="form-control" ng-model="email" placeholder="example@mail.umkc.edu" required pattern="[a-z0-9._%+-]+@mail.umkc.edu">
+      <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Email Address required.</p>
+    </div>
+
+    <!--Password-->
+    <div class="form-group" ng-class="{ 'has-error' : userForm.password.$invalid && !userForm.password.$pristine }">
+      <label>Password*</label>
+      <input type="password" name="password" class="form-control" ng-model="password" placeholder="enter password" ng-minlength="3" ng-maxlength="10" required>
+      <!--<p ng-show="userForm.password.$error.minlength" class="help-block">Password is too short.</p>-->
+      <!--<p ng-show="userForm.password.$error.maxlength" class="help-block">Password is too long.</p>-->
+    </div>
+
+
+
+    <button type="submit" class="button button-block button-royal padding-horizontal" ng-disabled="userForm.$invalid"  ng-click="login(email,password)">SignIn</button>
+    <button type="submit" class="button button-block button-royal padding-horizontal" ng-click="loginadmin()">SignIn as Admin</button>
+<br>
+
+    <h4 style="color:red">Not Registered?<span style="padding: 0 70px">&nbsp;</span>
+      <a href="#register" class="en" >Create an Account!!!</a>
+    </h4>
+
+    <div id="x"></div><br>
+
+    <div class="login">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+
+
+  </form>
+</div>
+</body>
+</html>

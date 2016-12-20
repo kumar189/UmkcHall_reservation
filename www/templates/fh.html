@@ -1,0 +1,95 @@
+<!--<ion-view title="Flarsheim Hall" id="page5" style=" background-color:#E1659F;" class="pane"-->
+          <!--xmlns:width="http://www.w3.org/1999/xhtml" xmlns:height="http://www.w3.org/1999/xhtml">-->
+  <!--<ion-nav-bar>-->
+    <!--<ion-nav-back-button>-->
+    <!--</ion-nav-back-button>-->
+  <!--</ion-nav-bar>-->
+
+
+<ion-view title="FH-Room" id="page7" cache-view="false" class="pane">
+  <ion-header-bar >
+    <h1 class="title">Flarsheim Hall</h1>
+  </ion-header-bar>
+
+  <ion-content ng-style="" overflow-scroll="true" padding="true" class="has-header" ng-controller="fhscheduleCtrl">
+
+  <div padding="true" class="has-header">
+    <style type="text/css">
+      .pane{
+        background: url(../img/sh5.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+      }
+      h3.sansserif {
+        font-family: Arial, Helvetica, sans-serif;
+        color: antiquewhite;
+      }
+      td{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        color:antiquewhite;
+        /*font-size:	10px;*/
+      }
+      .button2
+      {	background-color: purple;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        padding: 15px 220px;
+        text-align: center;
+        text-decoration: none;
+        font-size :32px;
+        margin: 5px;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.5s;
+      }
+      .button2:hover
+      {	background-color: white;
+        color: purple;
+        border-radius: 40%;
+      }
+     </style>
+    <div class="schedule">
+    <div class="spacer" style="width: 300px; height: 40px;"></div>
+
+      <table>
+        <tbody>
+        <tr>
+          <td>Room N0:</td>
+          <td> 510</td>
+        </tr>
+        <tr>
+          <td>Equipment type</td>
+          <td>: HYBRID</td>
+        </tr>
+        <tr>
+          <td>Capacity</td>
+          <td>: 30</td>
+        </tr>
+        <tr>
+          <td>Amenties</td>
+          <td>:Video projector, Remote Control, Computer, Laptop Connection, DVD/VCR, Document Camera, Projection Screen, Wireless Mouse, Auxilary Audio Input, Desk Microphone, Lapel Microphone</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <br><br>
+    <a ui-sref="fhschedule" id="flarsheimHall460-button4" class="button2">Select the timings</a>
+
+
+<br>
+<br>
+      <!--<h3 class="sansserif">Preview the room </h3>-->
+
+         <!--<video width="600px" height="150px" controls>-->
+      <iframe width="700" height="400" src="https://www.youtube.com/embed/XMWuf7T9n30" frameborder="0" allowfullscreen></iframe>
+         <!--</video>-->
+
+      <!--</div>-->
+
+    </div>
+    </div>
+  </ion-content>
+</ion-view>

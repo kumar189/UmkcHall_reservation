@@ -1,0 +1,20 @@
+<ion-view title="Booking History" id="page51" class="pane">
+  <ion-content padding="true" overflow-scroll="true" class="has-header">
+
+    <style type="text/css">
+      .pane{
+        background: url(../img/bb.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+      }
+      </style>
+<h1 style="color: violet"align="center">your bookings</h1>
+<div data-ng-controller="bookingsCtrl" data-ng-init="getBooking()">
+  <div align="center">
+    <h2 style="color:antiquewhite" ng-bind-html="myHTML"></h2>
+  </div>
+</div>
+  </ion-content>
+</ion-view>
+

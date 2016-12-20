@@ -1,0 +1,61 @@
+.login {
+ /*background: url(../img/mnl.jpg);*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30%;
+  height: 1000px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.register {
+/*background: url(../img/sky.jpg);*/
+background-repeat: no-repeat;
+background-size: contain ;
+background-position: center;
+width: 30%;
+height: 1000px;
+margin: auto;
+z-index: 2;
+position: relative;
+}
+
+
+
+.schedule {
+  /*background: url(../img/sky.jpg);*/
+  background-repeat: no-repeat;
+  background-size: contain ;
+  background-position: center;
+  width: 50%;
+  height: 1000px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.video {
+  /*background: url(../img/sky.jpg);*/
+  background-repeat: no-repeat;
+  background-size: contain ;
+  background-position: center;
+  width: 50%;
+  height: 120px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.update {
+  /*background: url(../img/sky.jpg);*/
+  background-repeat: no-repeat;
+  background-size: contain ;
+  background-position: center;
+  width: 50%;
+  height: 1000px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+}
